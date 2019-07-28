@@ -1,0 +1,31 @@
+#ifndef _DEVICE_ABNORMAL_STATE_RECORD_H_
+#define _DEVICE_ABNORMAL_STATE_RECORD_H_
+
+
+
+typedef enum {
+    DEVICE_ABNORMAL_STATE_RECORD_START,
+
+    DEVICE_ABNORMAL_STATE_RECORD_OK = DEVICE_ABNORMAL_STATE_RECORD_START,
+
+    DEVICE_ABNORMAL_STATE_RECORD_FLASH_OR_EEPROM_WRITE_READ_ABNORMAL,
+
+    DEVICE_ABNORMAL_STATE_RECORD_END,
+    DEVICE_ABNORMAL_STATE_RECORD_TOTAL = DEVICE_ABNORMAL_STATE_RECORD_END - 1
+} DEVICE_ABNORMAL_STATE_RECORD;
+
+
+
+void Device_Abnormal_State_Insert(
+    const DEVICE_ABNORMAL_STATE_RECORD state);
+void Device_Abnormal_State_Remove(
+    const DEVICE_ABNORMAL_STATE_RECORD state);
+unsigned char Device_Abnormal_State_Query(
+    DEVICE_ABNORMAL_STATE_RECORD * const state);
+unsigned char Device_Abnormal_State_Transform_Query(
+    unsigned char * const state);
+
+
+
+#endif
+
