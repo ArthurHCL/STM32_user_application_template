@@ -81,7 +81,7 @@
           <AfterMake>
             <RunUserProg1>1</RunUserProg1>
             <RunUserProg2>0</RunUserProg2>
-            <UserProg1Name>E:\Software\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o E:\STM32_user_application_template\MDK-ARM\Obj\STM32_user_application_template.bin E:\STM32_user_application_template\MDK-ARM\Obj\STM32_user_application_template.axf</UserProg1Name>
+            <UserProg1Name>E:\Software\Keil_v5\ARM\ARMCC\bin\fromelf.exe --bin -o E:\github_project\STM32_user_application_template\MDK-ARM\Obj\STM32_user_application_template.bin E:\github_project\STM32_user_application_template\MDK-ARM\Obj\STM32_user_application_template.axf</UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
             <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
